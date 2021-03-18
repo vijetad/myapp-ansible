@@ -1,2 +1,9 @@
 [webservers]
-172.17.0.4 ansible_user=vijeta
+172.17.0.4 
+
+[webservers:vars]
+ansible_user=vijeta
+ansible_password=qwerty
+ansible_become_user=root
+ansible_become_password=qwerty
+ansible_become_method=su
